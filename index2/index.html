@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="index.css">
 <script src="https://unpkg.com/vue@2.5.17"></script>
 
-<div id="example-2">
-	<button @click="show = !show">Toggle show</button>
+<div id="sample">
+	<button @click="show = !show">表示</button>
 	<transition name="bounce">
-	  <p v-if="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.</p>
+	  <p v-if="show">真ん中から言葉が表示</p>
 	</transition>
   </div>
 <script src="./index.js"></script>
