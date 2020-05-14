@@ -1,0 +1,12 @@
+﻿@model WebApp.Models.Class1
+
+@{
+    ViewBag.Title = "Detail";
+}
+<h2>@ViewContext.RouteData.Values["date"]@Model.Comment</h2>
+
+@Html.RouteLink("コメントへ", "RouteComment")
+
+@*共通のviewに設定*@
+@Html.Partial("_DateLink")
+

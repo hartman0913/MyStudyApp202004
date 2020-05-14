@@ -1,0 +1,7 @@
+﻿@{ ViewBag.Title = "Comment"; }
+
+<h2>@ViewContext.RouteData.Values["date"] コメント一覧</h2>
+
+@Html.RouteLink("日記へ", "RouteDiary")
+
+@Html.Partial("_DateLink")

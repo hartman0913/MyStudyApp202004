@@ -1,0 +1,13 @@
+﻿@{
+    //現在のルート date の値を取得します。
+    DateTime currentDate = Convert.ToDateTime(ViewContext.RouteData.Values["date"]);
+
+    //前後の日付の値を取得します。
+    String yesterdayText = currentDate.AddDays(-1).ToShortDateString();
+    String tomorrowText = currentDate.AddDays(1).ToShortDateString();
+}
+
+<div>
+    @Html.RouteLink(yesterdayText + "←", new { date = yesterdayText })
+    @Html.RouteLink("→" + tomorrowText, new { date = tomorrowText })
+</div>
